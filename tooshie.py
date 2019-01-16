@@ -15,4 +15,4 @@ async def ping(ctx):
     ping = round(ping_ * 1000)
     await ctx.channel.send(f"Pong! {ping}ms")
     
-bot.run(os.getenv.('TOKEN'))
+bot.run(os.getenv('TOKEN'))
