@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from discord.ext.commands import bot
+import os
 
 bot = commands.Bot(command_prefix="-")
 
@@ -14,4 +15,4 @@ async def ping(ctx):
     ping = round(ping_ * 1000)
     await ctx.channel.send(f"Pong! {ping}ms")
     
-bot.run('NTM0OTMzNjA1MjI3NDI5ODk4.DyBE6g.W4jtEMI3OPhXsGIk_RiE2JztTvU')
+bot.run(os.getenv.TOKEN)
